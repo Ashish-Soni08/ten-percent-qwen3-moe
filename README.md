@@ -116,7 +116,7 @@ Weights are not hosted. The artifact lives on our Modal volume. Rebuild it from 
 4. **Feedback, controls and the locked exam:** `runs/int8.sh`. Output is `runs/int8_report.txt`.
 5. **Commands:** `fc/cli.py answer` and `fc/cli.py learn` (docstring at the top of the file).
 
-The function-calling and safety pipelines are in `runs/stage*.sh` and `runs/saf*.sh`, with code in `fc/`.
+The function-calling and safety pipelines are in `runs/stage*.sh` and `runs/saf*.sh`, with code in `fc/`. One item of the function-calling guard set (`fc/guard.jsonl`) was removed before publishing because its dataset text contains a token-shaped string; the published guard has 153 items, and the runs used 154.
 
 ## Licences
 
