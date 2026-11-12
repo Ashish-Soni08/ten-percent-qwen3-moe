@@ -1,0 +1,70 @@
+== locked exam sha256
+6eb50b833e040d6bc46b388795c89145c1b1b0b75c7414a13bedcc146bd0ce02  data/pi_exam.jsonl
+pi_exam: 4900 items in 252s
+pi_pool: 2132 items in 107s
+total 6822174
+drwxr-xr-x 1 root root        161 Nov 12 08:49 .
+drwxr-xr-x 1 root root        231 Nov 12 08:48 ..
+-rw-r--r-- 1 root root       2749 Nov 12 08:49 base_config.json
+-rw-r--r-- 1 root root       7756 Nov 12 08:49 chat_template.jinja
+-rw-r--r-- 1 root root       2043 Nov 12 08:49 config.json
+-rw-r--r-- 1 root root        244 Nov 12 08:49 generation_config.json
+-rw-r--r-- 1 root root      19858 Nov 12 08:49 keep.json
+-rw-r--r-- 1 root root    3353259 Nov 12 08:49 merges.txt
+-rw-r--r-- 1 root root      41977 Nov 12 08:49 qmeta.json
+-rw-r--r-- 1 root root      16710 Nov 12 08:49 tokenizer_config.json
+-rw-r--r-- 1 root root   12807982 Nov 12 08:49 tokenizer.json
+-rw-r--r-- 1 root root    6722759 Nov 12 08:49 vocab.json
+-rw------- 1 root root 6962927400 Nov 12 08:49 weights.safetensors
+== EXAM (empty feedback)
+== /data/fc/q35final/pi/empty/pi_exam.jsonl
+ALL                          n= 4900 base=0.8518 build=0.7645 kept=3683/4174=0.8824
+bipia                        n= 1154 base=0.8380 build=0.6828 kept=776/967=0.8025
+llmail/yes                   n= 1454 base=0.6699 build=0.5798 kept=816/974=0.8378
+piarena/no                   n=  536 base=0.9925 build=1.0000 kept=532/532=1.0000
+piarena/yes                  n=  510 base=0.9627 build=0.7157 kept=364/491=0.7413
+sdocs/no                     n=  840 base=0.9619 build=0.9750 kept=800/808=0.9901
+sdocs/yes                    n=  406 base=0.9901 build=0.9729 kept=395/402=0.9826
+src:bipia                    n= 1154 base=0.8380 build=0.6828 kept=776/967=0.8025
+src:llmail                   n= 1454 base=0.6699 build=0.5798 kept=816/974=0.8378
+src:piarena                  n= 1046 base=0.9780 build=0.8614 kept=896/1023=0.8759
+src:sdocs                    n= 1246 base=0.9711 build=0.9743 kept=1195/1210=0.9876
+switched off 18 experts in total (18 new)
+switched off 3 experts in total (3 new)
+{"switched_off": [[32, 57], [10, 42], [21, 63], [3, 77], [27, 0], [9, 74], [26, 49], [17, 10], [7, 9], [17, 72], [0, 76], [39, 97], [24, 65], [29, 0], [31, 93], [18, 16], [33, 76], [21, 59]], "history": [{"n_items": 25, "added": 18}]}
+== empty
+probe_locked /data/fc/q35final/pi/empty/probe_locked.jsonl: acc 0.0119 (4/336)
+nearby_test /data/fc/q35final/pi/empty/nearby_test.jsonl: acc 0.9933 (298/300)
+feedback /data/fc/q35final/pi/empty/feedback.jsonl: acc 0.0000 (0/25)
+== real
+probe_locked /data/fc/q35final/pi/real/probe_locked.jsonl: acc 0.7232 (243/336)
+nearby_test /data/fc/q35final/pi/real/nearby_test.jsonl: acc 0.9500 (285/300)
+feedback /data/fc/q35final/pi/real/feedback.jsonl: acc 0.8800 (22/25)
+== shuf
+probe_locked /data/fc/q35final/pi/shuf/probe_locked.jsonl: acc 0.0446 (15/336)
+nearby_test /data/fc/q35final/pi/shuf/nearby_test.jsonl: acc 0.9767 (293/300)
+feedback /data/fc/q35final/pi/shuf/feedback.jsonl: acc 0.0000 (0/25)
+== base probes
+probe_locked /data/fc/q35final/pi/base/probe_locked.jsonl: acc 0.5923 (199/336)
+nearby_test /data/fc/q35final/pi/base/nearby_test.jsonl: acc 0.9867 (296/300)
+== nearby kept vs empty
+/data/fc/q35final/pi/empty/nearby_test.jsonl: acc 0.9933 (298/300)
+  kept 284/298 = 0.9530; agree 0.9500
+== EXAM after real feedback
+== /data/fc/q35final/pi/real/pi_exam.jsonl
+ALL                          n= 4900 base=0.8518 build=0.8871 kept=3998/4174=0.9578
+bipia                        n= 1154 base=0.8380 build=0.9107 kept=921/967=0.9524
+llmail/yes                   n= 1454 base=0.6699 build=0.7950 kept=955/974=0.9805
+piarena/no                   n=  536 base=0.9925 build=0.9459 kept=507/532=0.9530
+piarena/yes                  n=  510 base=0.9627 build=0.9686 kept=486/491=0.9898
+sdocs/no                     n=  840 base=0.9619 build=0.8762 kept=729/808=0.9022
+sdocs/yes                    n=  406 base=0.9901 build=0.9926 kept=400/402=0.9950
+src:bipia                    n= 1154 base=0.8380 build=0.9107 kept=921/967=0.9524
+src:llmail                   n= 1454 base=0.6699 build=0.7950 kept=955/974=0.9805
+src:piarena                  n= 1046 base=0.9780 build=0.9570 kept=993/1023=0.9707
+src:sdocs                    n= 1246 base=0.9711 build=0.9141 kept=1129/1210=0.9331
+0bce1d3ac5b6a488f835f6d8c2790e744d79353e59de2b5cbc60bc4268d1933c  /data/fc/q35final/pi/fb/feedback.jsonl
+d053cb9b6fed1078e5ce5c922b01e466254d3c50a1508610b479d6b5887c56ca  /data/fc/q35final/pi/fb/feedback_shuf.jsonl
+07dcee400b0db7dd9fd0c9ac6df2f0f80a58511972e522a81f063160081e348e  /data/fc/q35final/pi/fb/guard.jsonl
+82717dbf15cea138679488087d2ed587c97bb20740f1e7e76606fb196c6af2e5  /data/fc/q35final/pi/fb/nearby_test.jsonl
+636a476255b3d6afdf81aaee7023bdb4ff6fe704d0c60c093e49961f50bd3948  /data/fc/q35final/pi/fb/probe_locked.jsonl

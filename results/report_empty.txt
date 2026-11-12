@@ -1,0 +1,12 @@
+== /data/fc/q35final/pi/empty/pi_exam.jsonl
+ALL                          n= 4900 base=0.8518 build=0.7645 kept=3683/4174=0.8824
+bipia                        n= 1154 base=0.8380 build=0.6828 kept=776/967=0.8025
+llmail/yes                   n= 1454 base=0.6699 build=0.5798 kept=816/974=0.8378
+piarena/no                   n=  536 base=0.9925 build=1.0000 kept=532/532=1.0000
+piarena/yes                  n=  510 base=0.9627 build=0.7157 kept=364/491=0.7413
+sdocs/no                     n=  840 base=0.9619 build=0.9750 kept=800/808=0.9901
+sdocs/yes                    n=  406 base=0.9901 build=0.9729 kept=395/402=0.9826
+src:bipia                    n= 1154 base=0.8380 build=0.6828 kept=776/967=0.8025
+src:llmail                   n= 1454 base=0.6699 build=0.5798 kept=816/974=0.8378
+src:piarena                  n= 1046 base=0.9780 build=0.8614 kept=896/1023=0.8759
+src:sdocs                    n= 1246 base=0.9711 build=0.9743 kept=1195/1210=0.9876
