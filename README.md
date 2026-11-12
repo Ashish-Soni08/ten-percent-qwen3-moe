@@ -99,12 +99,13 @@ All GPU work ran on Modal H100s. Total spend was about $55; see `runs/SPEND.md`.
 | 3,300 experts, 1,300 at 3-bit + 2,000 at 2-bit, GPTQ | 6.07 GB | **96.45%** → final build |
 | 3,000 experts, 2,000 at 3-bit + 1,000 at 2-bit, GPTQ | 6.08 GB | 95.35% |
 | CLINC 10 coarse domains, same build | 6.07 GB | 91.8% (base only 90.7% right) |
+| **Qwen3.5-35B-A3B** (256 finer experts): 108 per layer by routing mass, RTN 3/4/6-bit, same locked exam | 6.99 GB (9.72%) | **locked exam 93.45%** (Banking77 91.5%); feedback probes 0 → 44/70 but nearby kept only 54% |
 
 **What we learned:**
 - With 128 coarse experts, about 3,300 experts are needed just to reach 98.5% before quantization. Fitting that into 6.1 GB forces many 2-bit experts, which costs about 2 points.
 - The faithfulness loss is concentrated where the base is unsure: near-synonym intents, and the unseen Banking77 labels.
 - Distillation, LoRA, or QAT recovery would likely close the gap, but rule 2 forbids training.
-- Another entrant's backup reports 99.5% on Qwen3.5-35B-A3B, which has 256 finer experts. That suggests finer-grained MoEs prune much better, which is the direction we would try next.
+- Another entrant's backup reports 99.5% on Qwen3.5-35B-A3B, which has 256 finer experts. We tried it on 12 Nov with the same locked exam: it kept 93.45%, slightly worse than this Qwen3-30B build, so this remains our intent-routing entry. (On review sentiment the same Qwen3.5 recipe keeps 98.96%; see the other entry PRs in this repo.)
 
 ## Reproduce
 
