@@ -1,0 +1,11 @@
+== /data/fc/q35final/saf/empty/saf_exam.jsonl
+ALL                          n= 4395 base=0.8437 build=0.8348 kept=3524/3708=0.9504
+aegis_prompt/safe            n=  878 base=0.8679 build=0.9066 kept=752/762=0.9869
+aegis_prompt/unsafe          n= 1024 base=0.7773 build=0.7158 kept=726/796=0.9121
+aegis_response/safe          n=  419 base=0.8663 build=0.8974 kept=350/363=0.9642
+aegis_response/unsafe        n=  394 base=0.7513 build=0.6853 kept=253/296=0.8547
+openai_mod/safe              n= 1158 base=0.8929 build=0.9067 kept=1009/1034=0.9758
+openai_mod/unsafe            n=  522 base=0.8755 build=0.8506 kept=434/457=0.9497
+src:aegis_prompt             n= 1902 base=0.8191 build=0.8039 kept=1478/1558=0.9487
+src:aegis_response           n=  813 base=0.8106 build=0.7946 kept=603/659=0.9150
+src:openai_mod               n= 1680 base=0.8875 build=0.8893 kept=1443/1491=0.9678
