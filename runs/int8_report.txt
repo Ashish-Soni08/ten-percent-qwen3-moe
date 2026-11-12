@@ -1,0 +1,60 @@
+739f3fd89e0ff94a2f60352150dd96064aa3d3d6530c5fe5b09032d94074dc67  data/int_exam.jsonl
+1bd8c84cac251a7fabbfeb81d671a7567201f35dbad2502f02d54d515214a150  data/ifb/feedback.jsonl
+f676adf1ba7755ef4eab2ab443a621c78810b5a663f8c297c7a6bbfc16dc1a55  data/ifb/guard.jsonl
+0de58a97a6782001bb981d8e61ae25afcb79ac1323d5b45923d3d041672f8226  data/ifb/nearby_test.jsonl
+76768cec4ff187092f57846ab95f557c4549a77876fba7758400dbe204a5c2a7  data/ifb/probe_locked.jsonl
+switched off 25 experts in total (25 new)
+switched off 4 experts in total (4 new)
+{"switched_off": [[47, 24], [45, 30], [31, 12], [19, 12], [43, 51], [11, 0], [20, 48], [22, 5], [44, 3], [19, 46], [38, 20], [26, 14], [9, 22], [21, 20], [44, 15], [29, 43], [47, 9], [40, 10], [13, 42], [38, 64], [47, 16], [47, 58], [47, 37], [43, 44], [45, 11]], "history": [{"n_items": 25, "added": 25}]}
+== empty
+probe_locked /data/fc/final/int3300/empty/probe_locked.jsonl: acc 0.0000 (0/228)
+nearby_test /data/fc/final/int3300/empty/nearby_test.jsonl: acc 1.0000 (300/300)
+feedback /data/fc/final/int3300/empty/feedback.jsonl: acc 0.0000 (0/25)
+== real
+probe_locked /data/fc/final/int3300/real/probe_locked.jsonl: acc 0.4430 (101/228)
+nearby_test /data/fc/final/int3300/real/nearby_test.jsonl: acc 0.8933 (268/300)
+feedback /data/fc/final/int3300/real/feedback.jsonl: acc 0.5600 (14/25)
+== shuf
+probe_locked /data/fc/final/int3300/shuf/probe_locked.jsonl: acc 0.0395 (9/228)
+nearby_test /data/fc/final/int3300/shuf/nearby_test.jsonl: acc 0.9433 (283/300)
+feedback /data/fc/final/int3300/shuf/feedback.jsonl: acc 0.0000 (0/25)
+int_exam: 7580 items in 10s
+probe_locked: 228 items in 0s
+nearby_test: 300 items in 1s
+== base probes
+probe_locked /data/fc/final/int3300/base/probe_locked.jsonl: acc 0.2412 (55/228)
+nearby_test /data/fc/final/int3300/base/nearby_test.jsonl: acc 0.9800 (294/300)
+== nearby kept vs empty
+/data/fc/final/int3300/empty/nearby_test.jsonl: acc 1.0000 (300/300)
+  kept 268/300 = 0.8933; agree 0.8933
+== /data/fc/final/int3300/empty/int_exam.jsonl
+ALL                          n= 7580 base=0.8210 build=0.7922 kept=5883/6223=0.9454
+banking77                    n= 3080 base=0.7195 build=0.6870 kept=2049/2216=0.9246
+clinc/auto_and_commute       n=  450 base=0.8533 build=0.8022 kept=357/384=0.9297
+clinc/banking                n=  450 base=0.9222 build=0.9067 kept=403/415=0.9711
+clinc/credit_cards           n=  450 base=0.8956 build=0.8867 kept=393/403=0.9752
+clinc/home                   n=  450 base=0.7756 build=0.7511 kept=330/349=0.9456
+clinc/kitchen_and_dining     n=  450 base=0.9044 build=0.8689 kept=388/407=0.9533
+clinc/meta                   n=  450 base=0.8844 build=0.8511 kept=375/398=0.9422
+clinc/small_talk             n=  450 base=0.8756 build=0.8778 kept=386/394=0.9797
+clinc/travel                 n=  450 base=0.9444 build=0.8733 kept=386/425=0.9082
+clinc/utility                n=  450 base=0.9622 build=0.9467 kept=425/433=0.9815
+clinc/work                   n=  450 base=0.8867 build=0.8778 kept=391/399=0.9799
+clinc_all                    n= 4500 base=0.8904 build=0.8642 kept=3834/4007=0.9568
+unseen_all                   n= 3080 base=0.7195 build=0.6870 kept=2049/2216=0.9246
+== /data/fc/final/int3300/real/int_exam.jsonl
+ALL                          n= 7580 base=0.8210 build=0.7877 kept=5806/6223=0.9330
+banking77                    n= 3080 base=0.7195 build=0.6974 kept=2060/2216=0.9296
+clinc/auto_and_commute       n=  450 base=0.8533 build=0.7933 kept=346/384=0.9010
+clinc/banking                n=  450 base=0.9222 build=0.8867 kept=396/415=0.9542
+clinc/credit_cards           n=  450 base=0.8956 build=0.9000 kept=395/403=0.9801
+clinc/home                   n=  450 base=0.7756 build=0.6911 kept=296/349=0.8481
+clinc/kitchen_and_dining     n=  450 base=0.9044 build=0.8467 kept=378/407=0.9287
+clinc/meta                   n=  450 base=0.8844 build=0.8578 kept=374/398=0.9397
+clinc/small_talk             n=  450 base=0.8756 build=0.8800 kept=386/394=0.9797
+clinc/travel                 n=  450 base=0.9444 build=0.8422 kept=375/425=0.8824
+clinc/utility                n=  450 base=0.9622 build=0.9289 kept=416/433=0.9607
+clinc/work                   n=  450 base=0.8867 build=0.8689 kept=384/399=0.9624
+clinc_all                    n= 4500 base=0.8904 build=0.8496 kept=3746/4007=0.9349
+unseen_all                   n= 3080 base=0.7195 build=0.6974 kept=2060/2216=0.9296
+
