@@ -1,0 +1,1 @@
+{"status":"done","exit_code":0,"stdout":"18000\nartifact bytes 6072952344 (6.073 GB) in 39s\nengine up in 68s\nmine: 18000 items in 260s\ndev: 800 items in 22s\nxlam_parallel    4376/6000 = 0.729\nxlam_single      9929/12000 = 0.827\n1024192 /data/fc/g56q3/mine.b64\n","stderr":"","seconds":452.0}

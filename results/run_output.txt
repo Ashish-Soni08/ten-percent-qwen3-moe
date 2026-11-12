@@ -1,0 +1,129 @@
+gpu wait 10s used=4MiB
+== locked exam sha256
+220e0e7a8b61356f319a0b587dcce31b306735ad0b278a95f47bc1a577b0d838  data/lid_exam.jsonl
+lid_exam: 9600 items in 381s
+lid_pool: 8000 items in 320s
+min routing-mass coverage 0.7927
+ARTIFACT /data/fc/art/q35_lid bytes 6985902729 = 9.716% of fp16 (71903655008)
+total 6822174
+drwxr-xr-x 1 root root        171 Nov 12 09:07 .
+drwxr-xr-x 1 root root        240 Nov 12 09:07 ..
+-rw-r--r-- 1 root root       2749 Nov 12 09:07 base_config.json
+-rw-r--r-- 1 root root       7756 Nov 12 09:07 chat_template.jinja
+-rw-r--r-- 1 root root       2043 Nov 12 09:07 config.json
+-rw-r--r-- 1 root root        244 Nov 12 09:07 generation_config.json
+-rw-r--r-- 1 root root      19850 Nov 12 09:07 keep.json
+-rw-r--r-- 1 root root    3353259 Nov 12 09:07 merges.txt
+-rw-r--r-- 1 root root      41977 Nov 12 09:07 qmeta.json
+-rw-r--r-- 1 root root      16710 Nov 12 09:07 tokenizer_config.json
+-rw-r--r-- 1 root root   12807982 Nov 12 09:07 tokenizer.json
+-rw-r--r-- 1 root root    6722759 Nov 12 09:07 vocab.json
+-rw------- 1 root root 6962927400 Nov 12 09:07 weights.safetensors
+lid_exam: 9600 items in 22s
+lid_pool: 8000 items in 20s
+== EXAM (empty feedback)
+== /data/fc/q35final/lid/empty/lid_exam.jsonl
+ALL                          n= 9600 base=0.9566 build=0.9514 kept=9002/9183=0.9803
+flores/Afrikaans             n=  300 base=0.9967 build=0.9933 kept=297/299=0.9933
+flores/Danish                n=  300 base=0.9933 build=0.9967 kept=297/298=0.9966
+flores/Dutch                 n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/French                n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/German                n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Icelandic             n=  300 base=0.9967 build=1.0000 kept=299/299=1.0000
+flores/Indonesian            n=  300 base=0.9867 build=0.9633 kept=289/296=0.9764
+flores/Italian               n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Malay                 n=  300 base=0.7133 build=0.8167 kept=200/214=0.9346
+flores/Norwegian             n=  300 base=0.9967 build=0.9933 kept=297/299=0.9933
+flores/Polish                n=  300 base=0.9967 build=1.0000 kept=299/299=1.0000
+flores/Portuguese            n=  300 base=0.9933 build=0.9700 kept=291/298=0.9765
+flores/Romanian              n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Slovenian             n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Spanish               n=  300 base=0.9967 build=0.9900 kept=297/299=0.9933
+flores/Swedish               n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+massive/Afrikaans            n=  300 base=0.8200 build=0.8867 kept=243/246=0.9878
+massive/Danish               n=  300 base=0.9600 build=0.9333 kept=278/288=0.9653
+massive/Dutch                n=  300 base=0.9967 build=0.9567 kept=287/299=0.9599
+massive/French               n=  300 base=0.9900 build=0.9833 kept=295/297=0.9933
+massive/German               n=  300 base=0.9767 build=0.9733 kept=291/293=0.9932
+massive/Icelandic            n=  300 base=0.9800 build=0.9867 kept=294/294=1.0000
+massive/Indonesian           n=  300 base=0.9967 build=0.9433 kept=283/299=0.9465
+massive/Italian              n=  300 base=0.9967 build=0.9767 kept=293/299=0.9799
+massive/Malay                n=  300 base=0.4833 build=0.5267 kept=123/145=0.8483
+massive/Norwegian            n=  300 base=0.8633 build=0.8033 kept=237/259=0.9151
+massive/Polish               n=  300 base=0.9933 build=0.9967 kept=298/298=1.0000
+massive/Portuguese           n=  300 base=0.9633 build=0.9067 kept=270/289=0.9343
+massive/Romanian             n=  300 base=0.9800 build=0.9433 kept=282/294=0.9592
+massive/Slovenian            n=  300 base=0.9667 build=0.9767 kept=285/290=0.9828
+massive/Spanish              n=  300 base=0.9967 build=0.9933 kept=298/299=0.9967
+massive/Swedish              n=  300 base=0.9767 build=0.9333 kept=279/293=0.9522
+src:flores                   n= 4800 base=0.9794 build=0.9827 kept=4666/4701=0.9926
+src:massive                  n= 4800 base=0.9337 build=0.9200 kept=4336/4482=0.9674
+build wrong 161 of 8000 ; base wrong 166
+class labels [('malay', 112)]
+feedback 25 2f0c7bc86a7fd8f3
+probe_locked 87 d7855e4395efc9b4
+nearby_test 300 e4173b4fa0f5dccb
+guard 160 a631388a3c732c54
+switched off 24 experts in total (24 new)
+switched off 24 experts in total (24 new)
+{"switched_off": [[37, 53], [35, 35], [19, 57], [13, 104], [31, 91], [18, 21], [39, 43], [34, 64], [15, 93], [32, 0], [29, 0], [9, 102], [16, 65], [27, 68], [26, 47], [9, 31], [30, 24], [33, 37], [18, 58], [17, 7], [23, 69], [15, 100], [15, 63], [28, 36]], "history": [{"n_items": 25, "added": 24}]}
+== empty
+probe_locked /data/fc/q35final/lid/empty/probe_locked.jsonl: acc 0.0000 (0/87)
+nearby_test /data/fc/q35final/lid/empty/nearby_test.jsonl: acc 1.0000 (300/300)
+feedback /data/fc/q35final/lid/empty/feedback.jsonl: acc 0.0000 (0/25)
+== real
+probe_locked /data/fc/q35final/lid/real/probe_locked.jsonl: acc 0.6667 (58/87)
+nearby_test /data/fc/q35final/lid/real/nearby_test.jsonl: acc 0.9933 (298/300)
+feedback /data/fc/q35final/lid/real/feedback.jsonl: acc 0.7600 (19/25)
+== shuf
+probe_locked /data/fc/q35final/lid/shuf/probe_locked.jsonl: acc 0.0000 (0/87)
+nearby_test /data/fc/q35final/lid/shuf/nearby_test.jsonl: acc 0.7633 (229/300)
+feedback /data/fc/q35final/lid/shuf/feedback.jsonl: acc 0.0000 (0/25)
+== base probes
+probe_locked /data/fc/q35final/lid/base/probe_locked.jsonl: acc 0.2874 (25/87)
+nearby_test /data/fc/q35final/lid/base/nearby_test.jsonl: acc 0.9733 (292/300)
+== nearby kept vs empty
+/data/fc/q35final/lid/empty/nearby_test.jsonl: acc 1.0000 (300/300)
+  kept 298/300 = 0.9933; agree 0.9933
+== EXAM after real feedback
+== /data/fc/q35final/lid/real/lid_exam.jsonl
+ALL                          n= 9600 base=0.9566 build=0.9541 kept=8948/9183=0.9744
+flores/Afrikaans             n=  300 base=0.9967 build=0.9967 kept=298/299=0.9967
+flores/Danish                n=  300 base=0.9933 build=0.9967 kept=297/298=0.9966
+flores/Dutch                 n=  300 base=1.0000 build=0.9967 kept=299/300=0.9967
+flores/French                n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/German                n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Icelandic             n=  300 base=0.9967 build=1.0000 kept=299/299=1.0000
+flores/Indonesian            n=  300 base=0.9867 build=0.9400 kept=282/296=0.9527
+flores/Italian               n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Malay                 n=  300 base=0.7133 build=0.9500 kept=210/214=0.9813
+flores/Norwegian             n=  300 base=0.9967 build=0.9567 kept=286/299=0.9565
+flores/Polish                n=  300 base=0.9967 build=1.0000 kept=299/299=1.0000
+flores/Portuguese            n=  300 base=0.9933 build=0.9900 kept=297/298=0.9966
+flores/Romanian              n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Slovenian             n=  300 base=1.0000 build=1.0000 kept=300/300=1.0000
+flores/Spanish               n=  300 base=0.9967 build=0.9833 kept=295/299=0.9866
+flores/Swedish               n=  300 base=1.0000 build=0.9900 kept=297/300=0.9900
+massive/Afrikaans            n=  300 base=0.8200 build=0.9333 kept=244/246=0.9919
+massive/Danish               n=  300 base=0.9600 build=0.9433 kept=280/288=0.9722
+massive/Dutch                n=  300 base=0.9967 build=0.9567 kept=287/299=0.9599
+massive/French               n=  300 base=0.9900 build=0.9833 kept=295/297=0.9933
+massive/German               n=  300 base=0.9767 build=0.9700 kept=290/293=0.9898
+massive/Icelandic            n=  300 base=0.9800 build=0.9867 kept=294/294=1.0000
+massive/Indonesian           n=  300 base=0.9967 build=0.8867 kept=266/299=0.8896
+massive/Italian              n=  300 base=0.9967 build=0.9800 kept=294/299=0.9833
+massive/Malay                n=  300 base=0.4833 build=0.7067 kept=142/145=0.9793
+massive/Norwegian            n=  300 base=0.8633 build=0.7133 kept=211/259=0.8147
+massive/Polish               n=  300 base=0.9933 build=0.9933 kept=297/298=0.9966
+massive/Portuguese           n=  300 base=0.9633 build=0.9667 kept=285/289=0.9862
+massive/Romanian             n=  300 base=0.9800 build=0.9467 kept=283/294=0.9626
+massive/Slovenian            n=  300 base=0.9667 build=0.9833 kept=287/290=0.9897
+massive/Spanish              n=  300 base=0.9967 build=0.9867 kept=296/299=0.9900
+massive/Swedish              n=  300 base=0.9767 build=0.7933 kept=238/293=0.8123
+src:flores                   n= 4800 base=0.9794 build=0.9875 kept=4659/4701=0.9911
+src:massive                  n= 4800 base=0.9337 build=0.9206 kept=4289/4482=0.9569
+2f0c7bc86a7fd8f3d5c768251dd1d9a873089935b72fbc35fd7882d9dac4e681  /data/fc/q35final/lid/fb/feedback.jsonl
+d8f97018459862021b128256e57c956503b8ce57449d3ca2d0a9276bddf611e4  /data/fc/q35final/lid/fb/feedback_shuf.jsonl
+a631388a3c732c541810e4d22af76ff48b180c4f8323e1d88a9e4d5cd3ca09a5  /data/fc/q35final/lid/fb/guard.jsonl
+e4173b4fa0f5dccb5cbe5d9bc2051717b34905d025b3b5cbcf11fbc37b6b7706  /data/fc/q35final/lid/fb/nearby_test.jsonl
+d7855e4395efc9b446073d2ea19958a3b6d639af4f7ea0725014bfa456212477  /data/fc/q35final/lid/fb/probe_locked.jsonl
