@@ -67,7 +67,7 @@ The probes are hard items: the uncompressed base model itself gets only 17 of 86
 ## Disclosures
 
 - Before the build we ran a small test of several tasks on this model (base accuracy, and kept share with 104 experts per layer and plain 3-bit rounding) on dev items and on a separate probe sample of the unseen source, and chose which tasks to build from those numbers. The locked exam items are disjoint from every item used there.
-- Weights are not hosted yet; the artifact is rebuilt from the base checkpoint by the scripts below.
+- The packed artifact (6,985,902,689 B, byte-identical to the one evaluated) is hosted at https://huggingface.co/ashish-soni08/qwen35-35b-a3b-sentiment-10pct. Pass that folder as `--artifact`; it can also be rebuilt from the base checkpoint by the scripts below.
 
 ## Reproduce
 
