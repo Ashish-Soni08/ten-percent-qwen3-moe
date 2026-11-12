@@ -1,0 +1,74 @@
+gpu wait 10s used=4MiB
+== locked exam sha256
+729928cbb01ab8a6ad6dc06634b53692ed0c7d91c5dc185d42e4495ec6804fdd  data/sent_exam.jsonl
+sent_exam: 3372 items in 127s
+sent_pool: 6000 items in 221s
+total 6822174
+drwxr-xr-x 1 root root        161 Nov 12 06:06 .
+drwxr-xr-x 1 root root        240 Nov 12 09:07 ..
+-rw-r--r-- 1 root root       2749 Nov 12 06:06 base_config.json
+-rw-r--r-- 1 root root       7756 Nov 12 06:06 chat_template.jinja
+-rw-r--r-- 1 root root       2043 Nov 12 06:06 config.json
+-rw-r--r-- 1 root root        244 Nov 12 06:06 generation_config.json
+-rw-r--r-- 1 root root      19810 Nov 12 06:06 keep.json
+-rw-r--r-- 1 root root    3353259 Nov 12 06:06 merges.txt
+-rw-r--r-- 1 root root      41977 Nov 12 06:06 qmeta.json
+-rw-r--r-- 1 root root      16710 Nov 12 06:06 tokenizer_config.json
+-rw-r--r-- 1 root root   12807982 Nov 12 06:06 tokenizer.json
+-rw-r--r-- 1 root root    6722759 Nov 12 06:06 vocab.json
+-rw------- 1 root root 6962927400 Nov 12 06:06 weights.safetensors
+switch check outputs ['Review Misleading:', 'The Complete Soapmaker', 'The user\nVery', 'The answer to the', 'The user\nThe', 'The user\nH']
+sent_exam: 3372 items in 14s
+sent_pool: 6000 items in 22s
+== EXAM (empty feedback)
+== /data/fc/q35final/sent/empty/sent_exam.jsonl
+ALL                          n= 3372 base=0.9674 build=0.9612 kept=3228/3262=0.9896
+amazon/negative              n=  978 base=0.9806 build=0.9765 kept=952/959=0.9927
+amazon/positive              n= 1022 base=0.9638 build=0.9599 kept=979/985=0.9939
+imdb                         n=  887 base=0.9605 build=0.9493 kept=839/852=0.9847
+src:amazon                   n= 2000 base=0.9720 build=0.9680 kept=1931/1944=0.9933
+src:imdb                     n=  887 base=0.9605 build=0.9493 kept=839/852=0.9847
+src:sst2                     n=  485 base=0.9608 build=0.9546 kept=458/466=0.9828
+sst2                         n=  485 base=0.9608 build=0.9546 kept=458/466=0.9828
+build wrong 177 of 6000 ; base wrong 152
+class labels [('positive', 111)]
+feedback 25 777ddeecc7fff2c7
+probe_locked 86 6e60bebcef03d783
+nearby_test 300 902acace1ab8bdf9
+guard 160 d819c06eca291484
+switched off 9 experts in total (9 new)
+switched off 24 experts in total (24 new)
+{"switched_off": [[20, 62], [6, 58], [9, 13], [31, 54], [28, 42], [24, 92], [28, 69], [33, 0], [26, 65]], "history": [{"n_items": 25, "added": 9}]}
+== empty
+probe_locked /data/fc/q35final/sent/empty/probe_locked.jsonl: acc 0.0000 (0/86)
+nearby_test /data/fc/q35final/sent/empty/nearby_test.jsonl: acc 1.0000 (300/300)
+feedback /data/fc/q35final/sent/empty/feedback.jsonl: acc 0.0000 (0/25)
+== real
+probe_locked /data/fc/q35final/sent/real/probe_locked.jsonl: acc 0.1395 (12/86)
+nearby_test /data/fc/q35final/sent/real/nearby_test.jsonl: acc 1.0000 (300/300)
+feedback /data/fc/q35final/sent/real/feedback.jsonl: acc 0.2400 (6/25)
+== shuf
+probe_locked /data/fc/q35final/sent/shuf/probe_locked.jsonl: acc 0.0000 (0/86)
+nearby_test /data/fc/q35final/sent/shuf/nearby_test.jsonl: acc 0.9967 (299/300)
+feedback /data/fc/q35final/sent/shuf/feedback.jsonl: acc 0.0000 (0/25)
+== base probes
+probe_locked /data/fc/q35final/sent/base/probe_locked.jsonl: acc 0.1977 (17/86)
+nearby_test /data/fc/q35final/sent/base/nearby_test.jsonl: acc 0.9967 (299/300)
+== nearby kept vs empty
+/data/fc/q35final/sent/empty/nearby_test.jsonl: acc 1.0000 (300/300)
+  kept 300/300 = 1.0000; agree 1.0000
+== EXAM after real feedback
+== /data/fc/q35final/sent/real/sent_exam.jsonl
+ALL                          n= 3372 base=0.9674 build=0.9632 kept=3231/3262=0.9905
+amazon/negative              n=  978 base=0.9806 build=0.9765 kept=953/959=0.9937
+amazon/positive              n= 1022 base=0.9638 build=0.9687 kept=983/985=0.9980
+imdb                         n=  887 base=0.9605 build=0.9459 kept=837/852=0.9824
+src:amazon                   n= 2000 base=0.9720 build=0.9725 kept=1936/1944=0.9959
+src:imdb                     n=  887 base=0.9605 build=0.9459 kept=837/852=0.9824
+src:sst2                     n=  485 base=0.9608 build=0.9567 kept=458/466=0.9828
+sst2                         n=  485 base=0.9608 build=0.9567 kept=458/466=0.9828
+777ddeecc7fff2c7babce66eff2aca29c3ae1b9a5ac9fbba79bfa40bdb6984b3  /data/fc/q35final/sent/fb/feedback.jsonl
+131e3f12e57984224e4a4f849791c10eaeb15d83ffa4689df5cebcc9107ab014  /data/fc/q35final/sent/fb/feedback_shuf.jsonl
+d819c06eca2914842cb73475cd3f1532a4f51560a32f2802e86a2d0e054d6c0c  /data/fc/q35final/sent/fb/guard.jsonl
+902acace1ab8bdf9d65be43037c9f4ee3c4841fe7044ce57b2087959390ce833  /data/fc/q35final/sent/fb/nearby_test.jsonl
+6e60bebcef03d78323819efea12f7f06195d6e4d55afe3731163f7db42cd10fd  /data/fc/q35final/sent/fb/probe_locked.jsonl

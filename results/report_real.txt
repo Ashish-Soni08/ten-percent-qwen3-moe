@@ -1,0 +1,9 @@
+== /data/fc/q35final/sent/real/sent_exam.jsonl
+ALL                          n= 3372 base=0.9674 build=0.9632 kept=3231/3262=0.9905
+amazon/negative              n=  978 base=0.9806 build=0.9765 kept=953/959=0.9937
+amazon/positive              n= 1022 base=0.9638 build=0.9687 kept=983/985=0.9980
+imdb                         n=  887 base=0.9605 build=0.9459 kept=837/852=0.9824
+src:amazon                   n= 2000 base=0.9720 build=0.9725 kept=1936/1944=0.9959
+src:imdb                     n=  887 base=0.9605 build=0.9459 kept=837/852=0.9824
+src:sst2                     n=  485 base=0.9608 build=0.9567 kept=458/466=0.9828
+sst2                         n=  485 base=0.9608 build=0.9567 kept=458/466=0.9828
